@@ -20,9 +20,10 @@ const storage = getStorage(app);
 
 // Connect to emulators in development (only if USE_EMULATOR is set)
 if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_USE_EMULATOR === 'true') {
-  const shouldUseEmulator = !auth.config.emulator;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const isEmulating = (auth as any).emulatorConfig;
   
-  if (shouldUseEmulator) {
+  if (!isEmulating) {
     try {
       connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
       connectFirestoreEmulator(db, '127.0.0.1', 8080);
