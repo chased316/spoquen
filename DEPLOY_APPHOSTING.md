@@ -31,14 +31,14 @@ firebase deploy --only firestore:rules,storage:rules
 In the App Hosting console, add these secrets:
 
 ```
-NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyBxORtJ9UIOp8mm-gkD8QGmovnTn04Molw
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=spoquen.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=spoquen
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=spoquen.firebasestorage.app
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=401721317290
-NEXT_PUBLIC_FIREBASE_APP_ID=1:401721317290:web:a8f77caf8413e5cbbdfdd3
-NEXT_PUBLIC_APP_URL=https://spoquen--<rollout-id>.web.app
-CRON_SECRET=your-random-secret-key-12345
+NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key-here
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-project.firebasestorage.app
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+NEXT_PUBLIC_APP_URL=https://your-project.web.app
+CRON_SECRET=your-random-secret-key
 ```
 
 Note: Update `NEXT_PUBLIC_APP_URL` after first deploy with actual URL.
