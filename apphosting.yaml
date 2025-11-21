@@ -1,3 +1,7 @@
+buildConfig:
+  buildCommand: npm ci && npm run build
+  outputDirectory: .next
+
 runConfig:
   runtime: nodejs20
   concurrency: 100
