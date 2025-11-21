@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/rotate-feed",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}
+
